@@ -34,7 +34,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_FILES)
 
 # executable dosya oluşturma islemi
 link: $(INC_FILES) $(NAME)
-	$(CC) $(CFLAGS) main.c -I $(INC_DIR) $(NAME) -o ./bin/program
+	$(CC) $(CFLAGS) -I $(INC_DIR) $(NAME) -o ./bin/program
 
 # *.o ifadesinde joker karaketer * ile tüm .o uzantılı dosyalar hedeflenmiştir
 # burada $(OBJ_DIR)/*.o yerine $(OBJ_FILES) yazılabilir
