@@ -6,7 +6,7 @@ makefile dosyasının yazılışı hakkında bilgiler elde edeceksiniz.
 Ecole 42 libft projesinde sizden istenen bütün dosyaların tek bir klasörde olması olabilir  
 Projeyi inceleyiniz ve Makefile dosyasını kendinize göre düzenleyiniz.  
 Üniversitelerde veri yapıları dersinde istenen klasör hiyerarşisine uyumlu olacak şekilde hazırlanmış bir Makefile dosyası göreceksiniz.  
-Yazılım hayatımız boyunca kullanacağımız Makefile dosyasını etkin kullanmak için aldığım bazı notları aşağıda göreceksiniz.
+Yazılım hayatımız boyunca kullanacağımız Makefile dosyasını etkin kullanmak için aldığım bazı notları aşağıda bulabilirsiniz.
 
 Klasör hiyerarşisi:  
 
