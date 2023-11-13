@@ -33,8 +33,8 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_FILES)
 # $< ifadesinde < işareti ilk bağımlılığın yerine geçer  $(SRC_DIR)/%.c gibi
 
 # executable dosya oluşturma islemi
-link: $(INC_FILES) $(NAME)
-	$(CC) $(CFLAGS) -I $(INC_DIR) $(NAME) -o ./bin/program
+link: $(NAME)
+	$(CC) $(CFLAGS) $(NAME) -o ./bin/program
 
 # *.o ifadesinde joker karaketer * ile tüm .o uzantılı dosyalar hedeflenmiştir
 # burada $(OBJ_DIR)/*.o yerine $(OBJ_FILES) yazılabilir

@@ -45,3 +45,4 @@ parametre | işlev
 `-L` | Derleyiciye, kütüphanelerin (.a, .lib gibi) bulunduğu *dizinleri* belirtir.
 `-l` | Derleyiciye, kullanılacak kütüphaneleri belirtir.
 `-D` |  Derleyiciye, makro tanımları ekler.
+`-C` |  parametresi, make komutu ile bir Makefile dosyası kullanarak bir programın derlenmesi sırasında kullanılan bir seçenektir. Bu seçenek, make komutunun, belirtilen dizindeki Makefile dosyasını kullanmasını sağlar.
