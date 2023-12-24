@@ -45,3 +45,48 @@ parametre | işlev
 `-L` | Derleyiciye, kütüphanelerin (.a, .lib gibi) bulunduğu *dizinleri* belirtir.
 `-l` | Derleyiciye, kullanılacak kütüphaneleri belirtir.
 `-D` |  Derleyiciye, makro tanımları ekler.
+`-O` | gcc derleyicisinde optimizasyon seviyesini belirtmek için kullanılır.
+`-C` | gcc derleyicisinde kod seviyesini belirtmek için kullanılır.
+
+---
+
+#### -O seçenekleri şunlardır
+
+-O parametresi optimizasyon seviyesini belirler. Yani derlenen kodun çalışma performansını etkiler. Optimizasyon seviyesi arttıkça kodun çalışma hızı artar ancak okunabilirliği azalır.
+
+- -O0: Hiçbir optimizasyon yapmaz, derleme hızı en yavaştır ama kod anlaşılması en kolaydır.
+- -O1: Temel optimizasyonları etkinleştirir. Derleme hızı artar, kod biraz karışıklaşır.
+- -O2: Daha gelişmiş optimizasyonları etkinleştirir. Derleme hızı daha da artar, kod daha da karışıklaşır.
+- -O3: En üst seviye optimizasyonları etkinleştirir. Derleme hızı en yüksektir ancak kod anlaşılması zorlaşır.
+- -Ofast: -O2 seçeneğine benzer ancak derleme hızını daha da artırmak için bazı geçerlilik kontrollerini atlar.
+- -Os: Küçük boyutlu kod üretmeye odaklanır.
+
+Bu seçeneklerle derleyici, kodu daha verimli çalışacak şekilde değiştirme, basitleştirme, kod parçalarını birleştirme gibi optimizasyonlar yapar. Böylece derlenen programın çalışma hızı artar. Ancak optimizasyon seviyesi arttıkça kodun anlaşılması zorlaşır.
+
+---
+
+#### -C seçeneğiyle belirlenen kod seviyeleri şunlardır
+
+-C parametresi ise kod seviyesini belirler. Bu kodun okunabilirliği ve anlaşılabilirliği üzerinde etkilidir. Düşük C seviyeleri kodu daha okunur hale getirir ancak performansı düşürür. Yüksek C seviyeleri performansı artırır fakat kod anlaşılmasını zorlaştırır.
+
+- -C: Derleyici herhangi bir kısıtlama olmaksızın derler.
+- -C0: En fazla optimizasyon sağlar ancak kodun anlaşılmasını zorlaştırır.
+- -C1: Optimizasyonları sınırlar ve kodun anlaşılmasını kolaylaştırır.
+- -C2: Daha az optimizasyon yapar, kodun anlaşılmasını daha da kolaylaştırır.
+- -C3: En az optimizasyon yapılır, kodun anlaşılması en kolaydır.
+- -CN: N numaralı C seviyesini belirtir, N değeri 0-3 arasında olmalıdır.
+
+-C seçeneğiyle derleyiciye kodun ne kadar okunabilir/anlaşılabilir olması gerektiği söylenir. Düşük C seviyeleri kodun daha anlaşılır olmasını sağlar ancak performansı düşürür. Yüksek C seviyeleri ise performansı artırır fakat kodun okunmasını zorlaştırır.
+
+Özetle, -C seçeneği gcc derleyicisinde kod seviyesi ve optimizasyon-okunabilirlik dengesini ayarlamaya yarar.
+
+---
+
+**-O ve -C parametreleri gcc derleyicisinde farklı işlevlere sahiptir:**
+
+Dolayısıyla:
+
+- -O parametresi kodun çalışma hızını (performansını),
+- -C parametresi ise kodun okunabilirliğini/anlaşılabilirliğini belirler.
+
+İkisi birlikte kullanıldığında hem kodun performansı hem de okunabilirliği/anlaşılabilirliği ayarlanabilir. Mesela -O2 -C1 derleyiciye hem yüksek optimizasyon hem de ortalama düzeyde okunabilirlik talimatı verir.
