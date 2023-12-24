@@ -45,3 +45,6 @@ parametre | işlev
 `-L` | Derleyiciye, kütüphanelerin (.a, .lib gibi) bulunduğu *dizinleri* belirtir.
 `-l` | Derleyiciye, kullanılacak kütüphaneleri belirtir.
 `-D` |  Derleyiciye, makro tanımları ekler.
+
+Detaylı bilgi için aşağıdaki adrese bakabilirsiniz:
+[GCC compiler options](https://docs.oracle.com/cd/E19957-01/806-3567/cc_options.html#:~:text=preprocessing%20directive%20lines.-,%2Dc,file%20using%20the%20%2Do%20option.)
