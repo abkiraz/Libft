@@ -46,6 +46,6 @@ parametre | işlev
 `-l` | Derleyiciye, kullanılacak kütüphaneleri belirtir.
 `-D` |  Derleyiciye, makro tanımları ekler.
 
-Detaylı bilgi için :
+Detaylı bilgi için :  
 [GCC compiler options](https://docs.oracle.com/cd/E19957-01/806-3567/cc_options.html#:~:text=preprocessing%20directive%20lines.-,%2Dc,file%20using%20the%20%2Do%20option.)  
 [optimizing gcc compilation](https://docs.oracle.com/en/operating-systems/oracle-linux/6/porting/ch04s03.html#:~:text=The%20%2DO%20level%20option%20to,the%20%2DO%20option%20at%20all.)
